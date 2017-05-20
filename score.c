@@ -11,9 +11,9 @@ int main(void)
   scanf("%d%d%d", &k, &e, &m);
   void print_title(void);
   int total;
-  total=int total (k, e, m);
+  total=total (k, e, m);
   int avg;
-  avg=double average(total);
+  avg=average(total);
   
   printf("  %d  %d  %d  %d  %d  ", k, e, m, total, avg);
 }
