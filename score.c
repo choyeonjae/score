@@ -6,11 +6,16 @@ void print_title(void);
 
 int main(void)
 {
-  //int kor, eng, mat;
+  int k, e, m;
   printf("input score : ");
-  scanf("%d%d%d", &kor, &eng, &mat);
+  scanf("%d%d%d", &k, &e, &m);
   void print_title(void);
+  int total;
+  total=int total (k, e, m);
+  int avg;
+  avg=double average(total);
   
+  printf("  %d  %d  %d  %d  %d  ", k, e, m, total, avg);
 }
 
 void print_title(void)
@@ -23,7 +28,7 @@ void print_title(void)
     printf("-");
   }
   
-  printf("  KOR  ENG  MAT  TOTLE  AVG  ");
+  printf("  KOR  ENG  MAT  TOTAL  AVG  ");
 
   int j;
   for(j=0;j<29;j++)
@@ -34,9 +39,14 @@ void print_title(void)
   return 0;
 }
 
-int totle (int kor, int eng, int mat)
+int total (int kor, int eng, int mat)
 {
-  int totle;
-  totle=kor+eng+mat;
-  printf("%d", totle);
+  int total;
+  total=kor+eng+mat;
+}
+
+double average(int tot)
+{
+  double avg;
+  avg=(double)tot/3;
 }
